@@ -1,5 +1,8 @@
 {
     "defaults": {
+        "reporters": [
+            "json"
+        ],
         "chromeLaunchConfig": {
             "args": [
                 "--no-sandbox"
@@ -7,6 +10,6 @@
         }
     },
     "urls" : [
-        "https://library.eku.edu"
+        "https://pa11y.org/"
     ]
 }

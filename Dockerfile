@@ -1,6 +1,6 @@
 FROM buildkite/puppeteer:latest
 
-RUN npm install --global --unsafe-perm pa11y-ci
-ADD config.json /usr/config.json
+ADD pa11y-ci /opt/pa11y-ci/src
+RUN npm install --global --unsafe-perm /opt/pa11y-ci/src
 
-ENTRYPOINT ["pa11y-ci", "--reporter", "json", "-c", "/usr/config.json"]
+ENTRYPOINT ["pa11y-ci", "-c", "/usr/pa11y/config.json"]
