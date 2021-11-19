@@ -1,0 +1,3 @@
+#! /usr/bin/env sh
+
+docker run --mount source="${PWD}"/example,destination=/usr/pa11y,type=bind -i --rm pa11y
